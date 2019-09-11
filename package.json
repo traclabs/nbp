@@ -1,0 +1,27 @@
+{
+  "name": "nbp",
+  "version": "1.0.0",
+  "description": "NIST Bad Passwords - JavaScript library for detecting common passwords.",
+  "main": "build/nbp.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test",
+    "collections": "collections"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traclabs/nbp.git"
+  },
+  "keywords": [
+    "security"
+  ],
+  "author": "Carey Li",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traclabs/nbp/issues"
+  },
+  "homepage": "https://github.com/traclabs/nbp#readme"
+}
