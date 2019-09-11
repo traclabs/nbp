@@ -348,7 +348,7 @@ var NBP = (function() {
     var fs = require('fs');
     var wordlistSplit = wordlist.split("_"),
         wordlistLength = wordlistSplit[wordlistSplit.length - 1],
-        bloomContent = fs.readFileSync(("collections/" + wordlist), 'utf8');
+        bloomContent = fs.readFileSync(("../collections/" + wordlist), 'utf8');
     bloom.init(bloomContent, wordlistLength);
   };
   return NBP;
