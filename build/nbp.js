@@ -1,3 +1,5 @@
+const path = require('path');
+
 var NBP = (function() {
   var NBP = {},
       LZString = function() {
@@ -348,7 +350,8 @@ var NBP = (function() {
     var fs = require('fs');
     var wordlistSplit = wordlist.split("_"),
         wordlistLength = wordlistSplit[wordlistSplit.length - 1],
-        bloomContent = fs.readFileSync(("../collections/" + wordlist), 'utf8');
+        collection = path.join(path.join(path.dirname(__dirname), "collections"), wordlist),
+        bloomContent = fs.readFileSync(collection, 'utf8');
     bloom.init(bloomContent, wordlistLength);
   };
   return NBP;
